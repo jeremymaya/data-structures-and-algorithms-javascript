@@ -70,8 +70,8 @@ let characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  
-  Object.values(characters).forEach(character => {
+
+  Object.values(arr).forEach(character => {
     houses.push(character.house);
   });
   return houses;
@@ -131,7 +131,7 @@ Write a function named totalCharacters that takes in an array and returns the nu
 
 const totalCharacters = (arr) => {
   let sum = 0;
-  
+
   Object.values(arr).forEach(character => {
     for(let i = 0; i < 3; i++){
       if(i === 2){
