@@ -144,7 +144,7 @@ const removeEvenValues = (arr) => {
       arr.splice( i, 1);
     }
   }
-return arr;
+  return arr;
 };
 
 // const removeEvenValues = (arr) => {
@@ -182,7 +182,7 @@ removeLastCharacters('Gregor', 9) returns ''
 
 const removeLastCharacters = (str, numberOfCharacters) => {
   let temp = '';
-  
+
   if(str.length > numberOfCharacters){
     temp = str.split('').splice(0, str.length - numberOfCharacters).join('');
   }

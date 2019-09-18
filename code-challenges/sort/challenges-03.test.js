@@ -7,7 +7,7 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 ------------------------------------------------------------------------------------------------ */
 
 /*
-INPUT: 
+INPUT:
 const nums = [3,4,5,6,7];
 sortBackwards(nums);
 
@@ -176,7 +176,7 @@ const sortPeopleBetter = (arr) => {
         }
         else if (a.age > b.age) {
           return 1;
-        } 
+        }
         else {
           return 0;
         }

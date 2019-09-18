@@ -26,7 +26,7 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let tempArr = []
+  let tempArr = [];
   let regex = /[A-Z]\w+/g;
   tempArr = str.match(regex);
   if(!tempArr) {
@@ -43,7 +43,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   let tempArr = [];
-  let regex = /  ([A-J]\w*)/gi;
+  let regex = / {2}([A-J]\w*)/gi;
   let result = `  ${arr.join('  ')}`.match(regex)
   if (result){
     result.forEach(data => {
@@ -87,7 +87,7 @@ const noPunctuation = str => {
   tempArr = str.match(regex);
   if(!tempArr) {
     tempArr = [];
-  }  
+  }
   return tempArr;
 };
 
