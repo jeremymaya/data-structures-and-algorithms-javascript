@@ -26,7 +26,6 @@ const grandTotal = (stores) => {
   const arr = [];
   let sum = 0;
   for (let i = 0; i < hoursOpen.length; i++) {
-    console.log(i);
     for (let j = 0; j < stores.length; j++) {
       sum = sum + stores[j][i];
     }
@@ -47,7 +46,11 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  const arr =[];
+  for (let i = 0; i < hours.length; i++) {
+    arr.push({sales: `${data[i]} cookies`, time: hours[i]});
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -143,7 +146,7 @@ const weeklyTemperatures = [
 const averageDailyTemperature = (weather) => {
   let sum = 0;
   let number = 0;
-  
+
   for (let i = 0; i < weather.length; i++) {
     for (let j = 0; j < weather[i].length; j++) {
       sum += weather[i][j];
@@ -206,7 +209,7 @@ const excel = (str) => {
   for (let i = 0; i < parsed.length; i++) {
     sum = 0;
     let row = parsed[i].split(',');
-    
+
     for (let j = 0; j < row.length; j++) {
       sum += parseInt(row[j]);
     }
